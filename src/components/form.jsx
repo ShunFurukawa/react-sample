@@ -1,5 +1,7 @@
 import React from 'react'
 
+import Message from './message'
+
 class Form extends React.Component {
 
   constructor() {
@@ -9,8 +11,8 @@ class Form extends React.Component {
         data: [],
       }
 
-  this.changeText = this.changeText.bind(this)
-  this.handleClick = this.handleClick.bind(this)
+    this.changeText = this.changeText.bind(this)
+    this.handleClick = this.handleClick.bind(this)
   }
 
   handleClick(event) {
@@ -19,7 +21,7 @@ class Form extends React.Component {
   }
 
   changeText(event) {
-    this.setSate({message: event.target.value})
+    this.setState({message: event.target.value})
   }
 
   render() {
