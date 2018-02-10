@@ -16,8 +16,8 @@ class Form extends React.Component {
   }
 
   handleClick(event) {
-    evennt.preventDefault()
-    this.setSate({data: this.state.data.concat(this.state.message)})
+    event.preventDefault()
+    this.setState({data: this.state.data.concat(this.state.message)})
   }
 
   changeText(event) {
